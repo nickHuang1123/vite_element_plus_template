@@ -1,0 +1,90 @@
+$color_1: rgba(255, 255, 255, 0.87);
+$color_2: #ff64f7;
+$color_3: #d93bd1;
+$font-family_1: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+$font-family_2: inherit;
+$background-color_1: #242424;
+$background-color_2: #1a1a1a;
+$border-color_1: #ff64f7;
+
+#app {
+	max-width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+:root {
+	font-family: $font-family_1;
+	line-height: 1.5;
+	font-weight: 400;
+	color-scheme: light dark;
+	color: $color_1;
+	background-color: $background-color_1;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+a {
+	font-weight: 500;
+	color: $color_2;
+	text-decoration: inherit;
+	&:hover {
+		color: $color_3;
+	}
+}
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: $font-family_2;
+	background-color: $background-color_2;
+	cursor: pointer;
+	transition: border-color 0.25s;
+	&:hover {
+		border-color: $border-color_1;
+	}
+	&:focus {
+		outline: 4px auto -webkit-focus-ring-color;
+	}
+	&:focus-visible {
+		outline: 4px auto -webkit-focus-ring-color;
+	}
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+	padding: 2em;
+	padding-bottom: 0px;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.logo {
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+	&:hover {
+		scale: 1.1;
+		filter: drop-shadow(0 0 2em #646cffaa);
+	}
+	&.vue:hover {
+		filter: drop-shadow(0 0 2em #42b883aa);
+	}
+	&.element-plus:hover {
+		filter: drop-shadow(0 0 2em #4256b8aa);
+	}
+}
