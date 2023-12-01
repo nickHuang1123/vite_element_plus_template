@@ -112,7 +112,8 @@ export default () => {
 
 
 ## Build
-```
+
+```javaScript=
 yarn run v1.22.19
 $ vite build
 vite v4.5.0 building for production...
@@ -130,7 +131,7 @@ dist/static/js/index-c3ff1975.js           83.74 kB │ gzip: 32.31 kB
 ✨ [vite-plugin-compression]:algorithm=gzip - compressed file successfully:
 dist/C:/Users/User/Desktop/vite_element_plus_template/static/css/Index-c27252b3.css.gz   60.77kb / gzip: 7.93kb
 dist/C:/Users/User/Desktop/vite_element_plus_template/static/js/Index-9afb15bb.js.gz     48.16kb / gzip: 17.50kb
-dist/C:/Users/User/Desktop/vite_element_plus_template/static/js/index-c3ff1975.js.gz     81.78kb / gzip: 31.52kb  
+dist/C:/Users/User/Desktop/vite_element_plus_template/static/js/index-c3ff1975.js.gz     81.78kb / gzip: 31.52kb
 ```
 
 ![stats.png](./public/stats.png)
