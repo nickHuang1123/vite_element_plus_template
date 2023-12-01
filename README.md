@@ -1,7 +1,7 @@
 # Vite + Vue3 + Element-plus Template
 
 > 主要整合了 **Element-plus 按需引入** 及 **element-variables.scss 主題參數** 引入及打包上的一些設置處理
-* Deploy : (Live Demo)[https://vite-vue-element-plus-template.vercel.app] by vercel
+> Deploy : [Live Demo](https://vite-vue-element-plus-template.vercel.app) by vercel
 
 * element-plus 按需引入 套件
     - unplugin-element-plus
