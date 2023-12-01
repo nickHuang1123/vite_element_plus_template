@@ -120,7 +120,7 @@ vite v4.5.0 building for production...
 ✓ 1418 modules transformed.                                                                                                                                                                                                21:11:59
 dist/index.html                             0.41 kB │ gzip:  0.29 kB
 dist/static/svg/vue-5532db34.svg            0.50 kB │ gzip:  0.31 kB
-dist/static/svg/element-plus-14a55fbf.svg   1.00 kB │ gzip:  0.61 kB                                                                                                                                                       
+dist/static/svg/element-plus-14a55fbf.svg   1.00 kB │ gzip:  0.61 kB
 dist/static/css/index-1de2b7af.css          1.26 kB │ gzip:  0.63 kB
 dist/static/css/Index-c27252b3.css         62.22 kB │ gzip:  8.12 kB
 dist/static/js/default-ff1a6c49.js          0.19 kB │ gzip:  0.17 kB
