@@ -110,4 +110,27 @@ export default () => {
   })
 }
 
+
+## Build
 ```
+yarn run v1.22.19
+$ vite build
+vite v4.5.0 building for production...
+✓ 1418 modules transformed.                                                                                                                                                                                                21:11:59
+dist/index.html                             0.41 kB │ gzip:  0.29 kB
+dist/static/svg/vue-5532db34.svg            0.50 kB │ gzip:  0.31 kB
+dist/static/svg/element-plus-14a55fbf.svg   1.00 kB │ gzip:  0.61 kB                                                                                                                                                       
+dist/static/css/index-1de2b7af.css          1.26 kB │ gzip:  0.63 kB
+dist/static/css/Index-c27252b3.css         62.22 kB │ gzip:  8.12 kB
+dist/static/js/default-ff1a6c49.js          0.19 kB │ gzip:  0.17 kB
+dist/static/js/Index-9afb15bb.js           49.15 kB │ gzip: 17.94 kB
+dist/static/js/index-c3ff1975.js           83.74 kB │ gzip: 32.31 kB
+✓ built in 20.98s
+
+✨ [vite-plugin-compression]:algorithm=gzip - compressed file successfully:
+dist/C:/Users/User/Desktop/vite_element_plus_template/static/css/Index-c27252b3.css.gz   60.77kb / gzip: 7.93kb
+dist/C:/Users/User/Desktop/vite_element_plus_template/static/js/Index-9afb15bb.js.gz     48.16kb / gzip: 17.50kb
+dist/C:/Users/User/Desktop/vite_element_plus_template/static/js/index-c3ff1975.js.gz     81.78kb / gzip: 31.52kb  
+```
+
+![stats.png](./public/stats.png)
