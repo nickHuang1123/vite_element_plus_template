@@ -17,18 +17,18 @@ import viteCompression from 'vite-plugin-compression'
 import { createHtmlPlugin } from 'vite-plugin-html'
 
 let cdn = ''
-const cdnDomain = 'https://cdn.jsdelivr.net/npm/'
+// const cdnDomain = 'https://cdn.jsdelivr.net/npm/'
 
-// 須注意版號是否有跟 package.json 一致
-const cdnData = [
-  'vue@3.3.8/dist/vue.runtime.global.prod.js',
-  'vue-demi@0.14.6/lib/index.iife.min.js',
-  'pinia@2.1.7/dist/pinia.iife.min.js',
-  'vue-router@4.2.5/dist/vue-router.global.min.js',
-  'element-plus@2.4.3/dist/index.full.min.js',
-]
+// // 須注意版號是否有跟 package.json 一致
+// const cdnData = [
+//   'vue@3.3.8/dist/vue.runtime.global.prod.js',
+//   'vue-demi@0.14.6/lib/index.iife.min.js',
+//   'pinia@2.1.7/dist/pinia.iife.min.js',
+//   'vue-router@4.2.5/dist/vue-router.global.min.js',
+//   'element-plus@2.4.3/dist/index.full.min.js',
+// ]
 
-cdnData.forEach((str) => (cdn += `<script src="${cdnDomain}/${str}"></script>`))
+// cdnData.forEach((str) => (cdn += `<script src="${cdnDomain}/${str}"></script>`))
 
 export default () => {
   return defineConfig({
@@ -95,19 +95,20 @@ export default () => {
           entryFileNames: 'static/js/[name]-[hash].js',
           assetFileNames: 'static/[ext]/[name]-[hash].[ext]'
         },
+        // 全局引入時配置 CDN
         // 略過打包項目
-        external: ['vue-demi', 'pinia', 'vue', 'vue-router', 'element-plus'],
-        plugins: [
-          // 暴露參數供外部 CDN 連結調用
-          externalGlobals({
-            // vue-demi 由於 element-plue、pinia 都要調用此依賴項所以也得優先引入，否則會 Error
-            ['vue-demi']: 'VueDemi',
-            pinia: 'Pinia',
-            vue: 'Vue',
-            ['vue-router']: 'VueRouter',
-            ['element-plus']: 'ElementPlus',
-          })
-        ]
+        // external: ['vue-demi', 'pinia', 'vue', 'vue-router', 'element-plus'],
+        // plugins: [
+        //   // 暴露參數供外部 CDN 連結調用
+        //   externalGlobals({
+        //     // vue-demi 由於 element-plue、pinia 都要調用此依賴項所以也得優先引入，否則會 Error
+        //     ['vue-demi']: 'VueDemi',
+        //     pinia: 'Pinia',
+        //     vue: 'Vue',
+        //     ['vue-router']: 'VueRouter',
+        //     ['element-plus']: 'ElementPlus',
+        //   })
+        // ]
       }
     }
   })

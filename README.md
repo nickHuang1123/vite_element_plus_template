@@ -62,7 +62,7 @@ export default () => {
         ext: '.gz'
       }),
 
-      // EJS 模板注入 html 功能
+      // ※ EJS 模板注入 html 功能
       createHtmlPlugin({
         minify: true,
         inject: {
@@ -90,6 +90,8 @@ export default () => {
           assetFileNames: 'static/[ext]/[name]-[hash].[ext]'
         },
     
+
+        // ※ 全局引入時，可配置 CDN
         // 套件略過打包項目
         external: ['vue-demi', 'pinia', 'vue', 'vue-router', 'element-plus'],
         plugins: [

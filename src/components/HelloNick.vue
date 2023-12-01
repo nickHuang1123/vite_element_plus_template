@@ -51,7 +51,7 @@ function testJu() {
       打包處理 vite.config
       <ul style="text-align: left;">
         <li>terser</li>
-        <li>rollup-plugin-external-globals</li>
+        <li>全局引入時可調換成 CDN 引入 // rollup-plugin-external-globals</li>
         <li>rollup-plugin-visualizer</li>
         <li>vite-plugin-compression</li>
         <li>vite-plugin-html</li>
