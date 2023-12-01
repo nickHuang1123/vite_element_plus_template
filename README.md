@@ -117,7 +117,7 @@ export default () => {
 yarn run v1.22.19
 $ vite build
 vite v4.5.0 building for production...
-✓ 1418 modules transformed.                                                                                                                                                                                                21:11:59
+✓ 1418 modules transformed.
 dist/index.html                             0.41 kB │ gzip:  0.29 kB
 dist/static/svg/vue-5532db34.svg            0.50 kB │ gzip:  0.31 kB
 dist/static/svg/element-plus-14a55fbf.svg   1.00 kB │ gzip:  0.61 kB
