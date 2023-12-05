@@ -136,3 +136,9 @@ dist/C:/Users/User/Desktop/vite_element_plus_template/static/js/index-c3ff1975.j
 ```
 
 ![stats.png](./public/stats.png)
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2023-present, Nick Huang
